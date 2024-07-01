@@ -1,0 +1,82 @@
+
+@media (max-width: 1200px) {
+    .category-card{
+        /* border: 1px solid red; */
+        width: 220px;
+        height: 280px;
+    }
+    .cat-footer {
+       display: none !important;
+        
+    }
+}
+@media (max-width: 992px) {
+    /* .category-card{
+        width: 170px;
+        height: 240px;
+    }
+    .category-icon img {
+        width: 90px;
+        height: 50px !important;
+    } */
+    .cat-footer {
+       display: none !important;
+        
+    }
+    .sel-card{
+        width: 200px;
+        height: 270px;
+
+    }
+    .east{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .testimonial-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .dots {
+        display: none;
+    }
+    .partners{
+        margin-top: 100px;
+        display: flex;
+        height: 162px;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .partners img{
+        width: 100px;
+    }
+    .footer-brand{
+        text-align: center;
+    }
+    .socila{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sel{
+        margin-top: 0;
+    }
+
+    
+}
+@media (max-width: 768px) {
+    .sel-cards{
+        display: flex
+        ;
+    }
+    .sel-card{
+        width: 170px;
+        height: 200px !important;
+
+    }
+    .east{
+        margin-top: 920px;
+        
+    }
+}

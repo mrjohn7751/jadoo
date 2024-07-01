@@ -1,29 +1,38 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const items = document.querySelectorAll('.carousel-item');
-    const dots = document.querySelectorAll('.dot');
+document.addEventListener('DOMContentLoaded', function() {
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    const carouselItems = document.querySelectorAll('.carousel-item');
     let currentIndex = 0;
 
-    function showItem(index) {
-        items.forEach((item, i) => {
-            item.classList.toggle('active', i === index);
-            dots[i].classList.toggle('active', i === index);
+    function updateCarousel() {
+        carouselItems.forEach((item, index) => {
+            item.classList.remove('active');
+            if (index === currentIndex) {
+                item.classList.add('active');
+            }
         });
+
+        // Disable prev button if the first item is active
+        prevButton.disabled = currentIndex === 0;
+
+        // Disable next button if the last item is active
+        nextButton.disabled = currentIndex === carouselItems.length - 1;
     }
 
-    document.getElementById('prev').addEventListener('click', function() {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        showItem(currentIndex);
+    prevButton.addEventListener('click', function() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
     });
 
-    document.getElementById('next').addEventListener('click', function() {
-        currentIndex = (currentIndex + 1) % items.length;
-        showItem(currentIndex);
+    nextButton.addEventListener('click', function() {
+        if (currentIndex < carouselItems.length - 1) {
+            currentIndex++;
+            updateCarousel();
+        }
     });
 
-    dots.forEach(dot => {
-        dot.addEventListener('click', function() {
-            currentIndex = parseInt(this.getAttribute('data-index'));
-            showItem(currentIndex);
-        });
-    });
+    // Initial update to set the first item active and disable prev button
+    updateCarousel();
 });

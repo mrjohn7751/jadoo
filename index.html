@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
     <title>Jadoo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -43,7 +44,7 @@
         </div>
         <div class="main-img">
              <img src="images/Image.png" alt="">
-         </div>
+        </div>
 
         <div class="container">
             <div class="content">
@@ -62,7 +63,7 @@
                 <p>CATEGORY</p>
                 <h1>We Offer Best Services</h1>
                 <div class="cat-cards row">
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                         <a href="#" class="category-card">
                             <div class="category-icon">
                                 <img src="images/icon/calculate.png">
@@ -75,7 +76,7 @@
                        
                     </div>
                     
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                         <a href="#" class="category-card">
                             <div class="category-icon">
                                     <img src="images/icon/flight.png">
@@ -86,7 +87,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                         <a href="#" class="category-card">
                             <div class="category-icon">
                                     <img src="images/icon/voice.png">
@@ -97,7 +98,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
 
                         <a href="#" class="category-card">
                             <div class="category-icon">
@@ -116,8 +117,8 @@
             <div class="sel">
                 <p class="top-title">Top Selling</p>
                 <h1>Top Destinations</h1>
-                <div class="sel-cards">
-                    <a href="#" class="sel-card">
+                <div class="sel-cards row">
+                    <a href="#" class="sel-card col-sm-6">
                         <div class="sel-img">
                             <img src="images/rome.png" alt="">
                         </div>
@@ -135,7 +136,7 @@
                         </div>
                        
                     </a>
-                    <a href="#" class="sel-card">
+                    <a href="#" class="sel-card col-sm-6">
                         <div class="sel-img">
                             <img src="images/london.png" alt="">
                         </div>
@@ -153,7 +154,7 @@
                         </div>
                        
                     </a>
-                    <a href="#" class="sel-card">
+                    <a href="#" class="sel-card col-sm-6">
                         <div class="sel-img">
                             <img src="images/euro.png" alt="">
                         </div>
@@ -281,7 +282,7 @@
             </div>
             <!-- Easy and Fast end -->
              <!-- Testimonials start -->
-            <div class="testimonial-container">
+             <div class="testimonial-container">
                 <div class="left-side">
                     <p class="subtitle">Testimonials</p>
                     <h1>What People Say <br>About Us</h1>
@@ -309,11 +310,20 @@
                                     <p>CEO of Red Button</p>
                                 </div>
                             </div>
+                            <div class="carousel-item">
+                                <div class="testimonial">
+                                    <img src="images/london.png" alt="User 2">
+                                    <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sit itaque suscipit deserunt maxime et quaerat enim quo omnis tenetur?”</p>
+                                    <h3>Chris Thomas</h3>
+                                    <p>CEO of Red Button</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="navigation">
-                            <button class="nav-button" id="prev"><i class="fas fa-chevron-up"></i></button>
-                            <button class="nav-button" id="next"><i class="fas fa-chevron-down"></i></button>
-                        </div>
+                       
+                    </div>
+                    <div class="navigation">
+                        <button class="nav-button" id="prev" disabled><i class="fas fa-chevron-up"></i></button>
+                        <button class="nav-button" id="next"><i class="fas fa-chevron-down"></i></button>
                     </div>
                 </div>
             </div>
@@ -363,13 +373,13 @@
         <div class="container">
             <div class="footer">
                 <div class="row">
-                    <div class="col-3 footer-brand">
+                    <div class="col-3 col-sm-12 mt-4 footer-brand">
                         <h2>Jadoo</h2>
                         <p>
                             Book your trip in minute, get full Control for much longer.
                         </p>
                     </div>
-                    <div class="col-6 footer-nav">
+                    <div class="col-6 col-sm-12 mt-4 footer-nav">
                         <div class="footer-link">
                             <p>Company</p>
                             <a href="#">About</a>
@@ -389,7 +399,7 @@
                             <a href="#">Low fare tips</a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 col-sm-12 mt-4 socila">
                         <div class="footer-icons">
                             <div class="footer-icon">
                                 <a href="#">
