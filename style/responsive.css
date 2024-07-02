@@ -1,5 +1,27 @@
-
+@media (max-width: 1400px) {
+    .content-p{
+        font-size: 64px;
+    
+    }
+    .main-img img{
+        width: 600px !important;
+    }
+}
 @media (max-width: 1200px) {
+    .main-img img{
+        width: 550px !important;
+    }
+    .right-img img{
+        width: 550px;
+     
+     }
+    .contenet-title{
+        font-size: 18px;
+    }
+    .content-p{
+        font-size: 54px;
+    
+    }
     .category-card{
         /* border: 1px solid red; */
         width: 220px;
@@ -9,16 +31,37 @@
        display: none !important;
         
     }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-brand{
+        text-align: center;
+    }
+    .socila{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media (max-width: 992px) {
-    /* .category-card{
-        width: 170px;
-        height: 240px;
+    .main-img img{
+        width: 450px !important;
     }
-    .category-icon img {
-        width: 90px;
-        height: 50px !important;
-    } */
+    .right-img img{
+        width: 450px;
+     
+     }
+    .contenet-title{
+        font-size: 18px;
+    }
+    .content-p{
+        font-size: 44px;
+    
+    }
     .cat-footer {
        display: none !important;
         
@@ -62,13 +105,35 @@
     .sel{
         margin-top: 0;
     }
+    .east-left{
+        width: 80%;
+    
+    }
+    .east{
+        margin-top: 200px !important;
+    }
+
 
     
 }
 @media (max-width: 768px) {
-    .sel-cards{
-        display: flex
-        ;
+    .main-img, .right-img{
+       display: none;
+    }
+    .category-card {
+        width: 200px;
+        height: 250px;
+        border: 1px solid red;
+    }
+    .category-icon img {
+        width: 70px;
+    }
+    
+    .category-title{
+        font-size: 18px;
+    }
+    .category-content{
+        font-size: 16px;
     }
     .sel-card{
         width: 170px;
@@ -79,4 +144,118 @@
         margin-top: 920px;
         
     }
+    .socila{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact{
+        padding: 10px;
+    }
+    .contact img{
+        width: 60px;
+        top: -20px;
+        right: -25px;
+    }
+    .contact p{
+        font-size: 18px;
+    }
+    .contact-mail{
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .contact button{
+        margin-top: 20px;
+
+
+    }
+    .right-side{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .one{
+        display: none;
+    }
+    .two{
+                display: flex;
+                flex-direction: row;
+                margin-left: 20px;
+    
+    }
+    .east-left h1 , .sel h1{
+        font-size: 24px;
+    }
+    .sel-img img{
+        height: 250px;
+    }
+    .sel-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .sel-card{
+        width: 250px;
+        border: 1px solid red;
+        height: 350px !important;
+        margin-top: 10px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .category-card {
+        width: 200px;
+        height: 250px;
+        border: 1px solid red;
+    }
+    .category-icon img {
+        width: 70px;
+    }
+    
+    .category-title{
+        font-size: 16px;
+    }
+    .category-content{
+        font-size: 14px;
+    }
+    .contact input {
+        width: 300px;
+        height: 46px;
+    }
+    .contact img{
+        width: 40px;
+        top: -10px;
+        right: -18px;
+    }
+    .east-left{
+        width: 100%;
+    
+    }
+    .east-left p, .left-side p, .sel p, .category p {
+        font-size: 16px;
+    }
+    .east-left h1, .left-side h1, .sel h1, .category h1 {
+        font-size: 18px;
+    }
+    .carousel-item {
+        width: 100% !important;
+        height: 100%;
+        border: 1px solid red;
+    }
+    .testimonial {
+        padding-right: 10px;
+    }
+    .sel-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .sel-card{
+        width: 250px;
+        border: 1px solid red;
+        height: 350px !important;
+        margin-top: 10px;
+    }
+    
 }
