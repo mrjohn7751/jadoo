@@ -36,3 +36,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initial update to set the first item active and disable prev button
     updateCarousel();
 });
+
+
+var icon = document.getElementById('nav-icon');
+var btn = document.getElementById('btn');
+var btn1 = document.getElementById('btn1');
+var ul = document.getElementById('ul');
+var dropdown = document.getElementById('dropdown')
+
+icon.addEventListener('click', () => {
+    icon.classList.toggle('fa-xmark');
+    btn.classList.toggle('active')
+    btn1.classList.toggle('active')
+    ul.classList.toggle('active')
+    dropdown.classList.toggle('active')
+})
