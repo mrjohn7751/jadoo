@@ -170,13 +170,14 @@
     
 }
 @media (max-width: 768px) {
+    
+
     .main-img, .right-img{
        display: none;
     }
     .category-card {
         width: 200px;
         height: 250px;
-        border: 1px solid red;
     }
     .category-icon img {
         width: 70px;
@@ -250,7 +251,6 @@
     }
     .sel-card{
         width: 250px;
-        border: 1px solid red;
         height: 350px !important;
         margin-top: 10px;
     }
@@ -261,7 +261,6 @@
     .category-card {
         width: 200px;
         height: 250px;
-        border: 1px solid red;
     }
     .category-icon img {
         width: 70px;
@@ -273,9 +272,18 @@
     .category-content{
         font-size: 14px;
     }
+    .contact{
+        background-color: transparent;
+        
+        
+    }
+    .contact img{
+        display: none !important;
+    }
     .contact input {
-        width: 300px;
+        width: 270px;
         height: 46px;
+        border: 1px solid rgb(211, 211, 211) !important;
     }
     .contact img{
         width: 40px;
@@ -295,7 +303,6 @@
     .carousel-item {
         width: 100% !important;
         height: 100%;
-        border: 1px solid red;
     }
     .testimonial {
         padding-right: 10px;
@@ -306,7 +313,6 @@
     }
     .sel-card{
         width: 250px;
-        border: 1px solid red;
         height: 350px !important;
         margin-top: 10px;
     }
