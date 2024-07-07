@@ -170,6 +170,7 @@
     
 }
 @media (max-width: 768px) {
+<<<<<<< HEAD
     .nav_right #nav-icon{
         display: block;
     }
@@ -223,6 +224,10 @@
     top: 280px;
     z-index: 11;
    }
+=======
+    
+
+>>>>>>> origin/main
     .main-img, .right-img{
        display: none;
     }
@@ -376,9 +381,18 @@
     .category-content{
         font-size: 14px;
     }
+    .contact{
+        background-color: transparent;
+        
+        
+    }
+    .contact img{
+        display: none !important;
+    }
     .contact input {
-        width: 300px;
+        width: 270px;
         height: 46px;
+        border: 1px solid rgb(211, 211, 211) !important;
     }
     .contact img{
         width: 40px;
