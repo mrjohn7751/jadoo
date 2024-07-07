@@ -170,13 +170,65 @@
     
 }
 @media (max-width: 768px) {
+    .nav_right #nav-icon{
+        display: block;
+    }
+    .nav_right{
+        justify-content: end;
+    }
+    .nav_right ul, .nav_right button, .nav_right .dropdown{
+        display: none;
+    }
+
+   #ul.active{
+    display: block;
+    position: absolute;
+    left: 300px;
+    top: 50px;
+    width: 300px;
+    height: 300px;
+    padding: 0px;
+    gap: 5px;
+    z-index: 10;
+    background-color: #fff !important;
+    box-shadow: 0 0 5px rgb(228, 227, 227);
+    border-radius: 10px;
+    padding: 10px;
+   }
+   #ul.active li{
+    margin:0px 0px 10px 3px;
+    width: max-content;
+    
+   }
+   #btn.active{
+    display: block;
+    position: absolute;
+    left: 315px;
+    top: 185px;
+    z-index: 11;
+   }
+   #btn1.active{
+    display: block;
+    display: block;
+    position: absolute;
+    left: 313px;
+    top: 230px;
+    z-index: 11;
+   }
+   .dropdown.active{
+ 
+    display: block;
+    position: absolute;
+    left: 314px;
+    top: 280px;
+    z-index: 11;
+   }
     .main-img, .right-img{
        display: none;
     }
     .category-card {
         width: 200px;
         height: 250px;
-        border: 1px solid red;
     }
     .category-icon img {
         width: 70px;
@@ -250,7 +302,6 @@
     }
     .sel-card{
         width: 250px;
-        border: 1px solid red;
         height: 350px !important;
         margin-top: 10px;
     }
@@ -258,10 +309,62 @@
 }
 
 @media (max-width: 576px) {
+    .nav_right #nav-icon{
+        display: block;
+    }
+    .nav_right{
+        justify-content: end;
+    }
+    .nav_right ul, .nav_right button, .nav_right .dropdown{
+        display: none;
+    }
+
+   #ul.active{
+    display: block;
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    width: 300px;
+    height: 300px;
+    padding: 0px;
+    gap: 5px;
+    z-index: 10;
+    background-color: #fff !important;
+    box-shadow: 0 0 5px rgb(228, 227, 227);
+    border-radius: 10px;
+    padding: 10px;
+   }
+   #ul.active li{
+    margin:0px 0px 10px 3px;
+    width: max-content;
+    
+   }
+   #btn.active{
+    display: block;
+    position: absolute;
+    left: 215px;
+    top: 185px;
+    z-index: 11;
+   }
+   #btn1.active{
+    display: block;
+    display: block;
+    position: absolute;
+    left: 213px;
+    top: 230px;
+    z-index: 11;
+   }
+   .dropdown.active{
+ 
+    display: block;
+    position: absolute;
+    left: 214px;
+    top: 280px;
+    z-index: 11;
+   }
     .category-card {
         width: 200px;
         height: 250px;
-        border: 1px solid red;
     }
     .category-icon img {
         width: 70px;
@@ -295,7 +398,6 @@
     .carousel-item {
         width: 100% !important;
         height: 100%;
-        border: 1px solid red;
     }
     .testimonial {
         padding-right: 10px;
@@ -306,9 +408,64 @@
     }
     .sel-card{
         width: 250px;
-        border: 1px solid red;
         height: 350px !important;
         margin-top: 10px;
     }
     
+}
+
+@media (max-width: 430px) {
+    .nav_right #nav-icon{
+        display: block;
+    }
+    .nav_right{
+        justify-content: end;
+    }
+    .nav_right ul, .nav_right button, .nav_right .dropdown{
+        display: none;
+    }
+
+   #ul.active{
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    width: 300px;
+    height: 300px;
+    padding: 0px;
+    gap: 5px;
+    z-index: 10;
+    background-color: #fff !important;
+    box-shadow: 0 0 5px rgb(228, 227, 227);
+    border-radius: 10px;
+    padding: 10px;
+   }
+   #ul.active li{
+    margin:0px 0px 10px 3px;
+    width: max-content;
+    
+   }
+   #btn.active{
+    display: block;
+    position: absolute;
+    left: 115px;
+    top: 185px;
+    z-index: 11;
+   }
+   #btn1.active{
+    display: block;
+    display: block;
+    position: absolute;
+    left: 113px;
+    top: 230px;
+    z-index: 11;
+   }
+   .dropdown.active{
+ 
+    display: block;
+    position: absolute;
+    left: 114px;
+    top: 280px;
+    z-index: 11;
+   }
 }

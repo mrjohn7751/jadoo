@@ -50,4 +50,23 @@ icon.addEventListener('click', () => {
     btn1.classList.toggle('active')
     ul.classList.toggle('active')
     dropdown.classList.toggle('active')
+});
+var content = document.getElementById('content')
+
+var dropdown = document.getElementById('dropdown');
+
+dropdown.addEventListener('click', () => {
+   content.classList.toggle('active')
 })
+
+ScrollReveal({ 
+    reset: true,
+    distance: '100px',
+    duration: 2000,
+    delay: 200,
+});
+
+ScrollReveal().reveal('.content, .top-title', { origin: 'top'});
+ScrollReveal().reveal('.category-card, .carousel-wrapper, .contact', { origin: 'bottom'});
+ScrollReveal().reveal('.sel-card, .east-left, .left-side', { origin: 'left'});
+ScrollReveal().reveal('.east-right, .navigation ', { origin: 'right'});
